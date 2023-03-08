@@ -1,5 +1,6 @@
 # Prak-OOP
 
+```java
 class SumberBunyi {
     String nama;
     boolean nyala = false;
@@ -51,3 +52,4 @@ class Latihan {
         
     }
 }
+```
