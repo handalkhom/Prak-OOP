@@ -1,4 +1,4 @@
-# Prak-OOP
+# Penjual Bacang
 
 ```java
 class SumberBunyi {
@@ -8,11 +8,14 @@ class SumberBunyi {
     void bunyi(String bunyiDari) {
         this.nyala = true;
         if (bunyiDari.equals("mobil")){
-            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + "Mendengar suara tin dari mobil yang lewat");}
+            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + " Mendengar suara tin dari mobil yang lewat");
+        }
         else if (bunyiDari.equals("mesjid")){
-            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + "Mendengar suara adzan berkumandang dari mesjid terdekat");}
+            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + " Mendengar suara adzan berkumandang dari mesjid terdekat");
+        }
         else if (bunyiDari.equals("warga")){
-            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + "Mendengar perbincangan para warga di sekitar");}
+            System.out.println("Seorang pedagang bacang bernama " + Orang.nama + " Mendengar perbincangan para warga di sekitar");
+        }
     }
 }
 
@@ -30,7 +33,7 @@ class Tempat {
 }
 
 class Orang {
-    String nama;
+    static String nama;
     Tempat pasar;
 }
 
@@ -41,10 +44,10 @@ class Latihan {
         warga.nama = "Tejo";
         
         Tempat pasar = new Tempat();
-        Pendengaran normal = new Pendengarann();
+        Pendengaran normal = new Pendengaran();
         SumberBunyi mobil = new SumberBunyi();
         
-        dapur.mobil = mobil;
+        normal.mobil = mobil;
         pasar.normal = normal;
         warga.pasar = pasar;
         
